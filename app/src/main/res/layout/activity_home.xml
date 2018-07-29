@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+
+    android:padding="@dimen/home_screen_padding"
+    android:background="@color/colorPrimary">
+
+    <Button
+        android:id="@+id/aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_comer"
+        android:text="@string/about_us"
+        android:onClick="homeItemClicked"/>
+
+    <Button
+        android:id="@+id/academic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_comer"
+        android:text="@string/academic"
+        android:onClick="homeItemClicked"/>
+
+    <Button
+        android:id="@+id/departments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_comer"
+        android:text="@string/departments"
+        android:onClick="homeItemClicked"/>
+
+    <Button
+        android:id="@+id/research"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_comer"
+        android:onClick="homeItemClicked"
+        android:text="@string/research" />
+
+    <Button
+        android:id="@+id/facilities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_comer"
+        android:text="@string/facilities"
+        android:onClick="homeItemClicked"/>
+
+
+    <Button
+        android:id="@+id/student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_comer"
+        android:text="@string/student"
+        android:onClick="homeItemClicked"/>
+
+    <Button
+        android:id="@+id/events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_comer"
+        android:text="@string/events"
+        android:onClick="homeItemClicked"/>
+
+    <Button
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_comer"
+        android:text="@string/contact_us"
+        android:onClick="homeItemClicked"/>
+
+</LinearLayout>

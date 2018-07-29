@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gallary.TeacherDetailFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+<!--<include layout="@layout/back_b_"></include>-->
+<include layout="@layout/header_layout"></include>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img6"
+
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/te1"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:text="" />
+
+</FrameLayout>

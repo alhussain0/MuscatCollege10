@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contact_us.Contact"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button2"
+        android:layout_margin="5dp"
+        android:textColor="@color/colorPrimary"
+       android:background="?android:attr/selectableItemBackground" />
+
+    <View android:layout_width="match_parent"
+
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@android:color/black"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button4"
+        android:textColor="@color/colorPrimary"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textview3"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/phone1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_menu_call"
+        android:background="@drawable/rounded_comer"
+        android:text="@string/phone1"
+        android:textColor="#be8816"
+        android:onClick="dialnumber"
+    />
+    <Button
+        android:id="@+id/phone2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_menu_call"
+        android:background="@drawable/rounded_comer"
+        android:text="@string/phone2"
+        android:textColor="#be8816"
+        android:onClick="dialnumber"
+        />
+    <Button
+        android:id="@+id/phone3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_menu_call"
+        android:background="@drawable/rounded_comer"
+        android:text="@string/phone3"
+        android:textColor="#be8816"
+       android:onClick="dialnumber"/>
+
+
+    <Button
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/sym_action_email"
+        android:background="@drawable/rounded_comer"
+        android:text="info@muscatcollege.edu.om"
+        android:textColor="#be8816"
+        android:onClick="dialnumber"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textview13"
+        android:layout_marginTop="10dp"
+       />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:background="@drawable/circleindicatoer"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview6"
+            android:textColor="@color/colorPrimary"
+            android:onClick="dialnumber"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:background="@drawable/circleindicatoer"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview7"
+            android:textColor="@color/colorPrimary"
+            android:onClick="dialnumber"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:background="@drawable/circleindicatoer"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview8"
+            android:textColor="@color/colorPrimary"
+            android:onClick="dialnumber"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:background="@drawable/circleindicatoer"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview9"
+            android:textColor="@color/colorPrimary"
+            android:onClick="dialnumber"/>
+    </LinearLayout>
+
+</LinearLayout>

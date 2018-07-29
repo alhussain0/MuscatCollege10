@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".about_us.MainAboutUsPage"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/about_mus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/about_mus"
+        android:textStyle="bold"
+        android:onClick="aboutMuscatCollegeOnclick"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+    <Button
+        android:id="@+id/hmmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/hmmessage"
+        android:onClick="aboutMuscatCollegeOnclick"/>
+
+    <Button
+        android:id="@+id/chairmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/chairmessage"
+        android:onClick="aboutMuscatCollegeOnclick"/>
+
+    <Button
+        android:id="@+id/dean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/dean"
+        android:onClick="aboutMuscatCollegeOnclick"/>
+
+    <Button
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/board"
+        android:onClick="aboutMuscatCollegeOnclick"/>
+
+    <Button
+        android:id="@+id/vision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/vision"
+        android:onClick="aboutMuscatCollegeOnclick"/>
+
+    <Button
+        android:id="@+id/oraganizational"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/oraganizational"
+        android:onClick="aboutMuscatCollegeOnclick"/>
+
+    <Button
+        android:id="@+id/quality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/quality"
+        android:onClick="aboutMuscatCollegeOnclick"/>
+
+    <Button
+        android:id="@+id/ceneric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/ceneric"
+        android:onClick="aboutMuscatCollegeOnclick"/>
+
+    <Button
+        android:id="@+id/Acdemic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/Acdemic"
+        android:textStyle="bold"
+        android:onClick="aboutMuscatCollegeOnclick"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+    <Button
+        android:id="@+id/university"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/university"
+        android:onClick="aboutMuscatCollegeOnclick"/>
+
+    <Button
+        android:id="@+id/scottish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/scottish"
+        android:onClick="aboutMuscatCollegeOnclick"/>
+
+    <Button
+        android:id="@+id/malaysia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/malaysia"
+        android:onClick="aboutMuscatCollegeOnclick"/>
+
+
+</LinearLayout>

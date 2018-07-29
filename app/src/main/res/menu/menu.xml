@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/action_settings1"
+    android:title="@string/language"
+    app:showAsAction="always"
+    android:icon="@android:drawable/btn_plus"
+    />
+    <item
+        android:id="@+id/action_settings2"
+        android:title="@string/language"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/sym_call_incoming"
+        />
+    <item
+        android:id="@+id/action_settings3"
+        android:title="@string/language"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_camera"
+        />
+    <item
+        android:id="@+id/action_settings4"
+        android:title="@string/language"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_gallery"
+        />
+
+</menu>
