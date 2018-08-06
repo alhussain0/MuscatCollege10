@@ -91,5 +91,7 @@
     <string name="surveying">HND in Quantity Surveying</string>
     <string name="construction">HND in Construction Managment</string>
     <string name="fondationprogramme">The general Fondation Programme</string>
+    <string name="save">save</string>
+    <string name="name">Name</string>
 
 </resources>

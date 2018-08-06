@@ -18,12 +18,18 @@ import android.view.View;
 import com.learning.om.muscatcollege.about_us.MainAboutUsFragment;
 import com.learning.om.muscatcollege.academic_programmess.MainAcademicProgrammesFragment;
 import com.learning.om.muscatcollege.contact_us.ContactUsFragment;
-import com.learning.om.muscatcollege.gallary.FragmentWithRecyclerView;
-import com.learning.om.muscatcollege.gallary.LatestGalleryFragment;
+import com.learning.om.muscatcollege.gallery.CollegeGalleryFragment;
+import com.learning.om.muscatcollege.teacher_profile.LatestGalleryFragment;
 import com.learning.om.muscatcollege.home.HomeFragment;
+import com.learning.om.muscatcollege.teacher_profile.TeacherProfileFragment;
+import com.learning.om.muscatcollege.teacher_profile.TeacherProfileNew;
 
 public class MainHomeNavigation extends  MuscatCollegeBaseActivity
-        implements NavigationView.OnNavigationItemSelectedListener ,HomeFragment.OnFragmentInteractionListener,LatestGalleryFragment.OnFragmentInteractionListener{
+        implements NavigationView.OnNavigationItemSelectedListener ,
+        HomeFragment.OnFragmentInteractionListener,
+        LatestGalleryFragment.OnFragmentInteractionListener,
+        CollegeGalleryFragment.OnFragmentInteractionListener,
+        TeacherProfileFragment.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,7 +119,7 @@ public class MainHomeNavigation extends  MuscatCollegeBaseActivity
         } else if (id == R.id.student) {
 
         } else if (id == R.id.nav_gallery) {
-            fragment=new LatestGalleryFragment();
+            fragment=new CollegeGalleryFragment();
 
         } else if (id == R.id.contact) {
 
@@ -130,7 +136,11 @@ public class MainHomeNavigation extends  MuscatCollegeBaseActivity
 
         }else if (id == R.id.departments) {
 
-        }else if (id == R.id.research) {
+        }
+        else if (id == R.id.teacher) {
+            fragment=new TeacherProfileFragment();
+        }
+        else if (id == R.id.research) {
 
         }else if (id == R.id.facilities) {
 

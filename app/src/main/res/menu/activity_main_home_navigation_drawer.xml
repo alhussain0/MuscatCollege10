@@ -32,6 +32,10 @@
             android:id="@+id/student"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/student" />
+        <item
+            android:id="@+id/teacher"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="+ Teacher Profile New" />
     </group>
 
     <item android:title="Communicate">

@@ -4,9 +4,12 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.learning.om.muscatcollege.EXdatabase.MyHelperDatabase;
 import com.learning.om.muscatcollege.MainHomeNavigation;
@@ -76,6 +79,11 @@ public class AllTeacherProfileFragment extends Fragment implements NewTeacherAda
         teacherProfileNews = myHelperDatabase.getAllTheTeacher();
         // Inflate the layout for this fragment
          View view =inflater.inflate(R.layout.fragment_all_teacher_profile, container, false);
+        RecyclerView recyclerView =view.findViewById(R.id.recyclerView);
+        LinearLayoutManager linearLayoutManager= new LinearLayoutManager(getContext(),LinearLayoutManager.VERTICAL,false);
+        NewTeacherAdapter newTeacherAdapter= new NewTeacherAdapter(getActivity(),teacherProfileNews);
+        newTeacherAdapter.onCardViewClick(this);
+        recyclerView.setAdapter(newTeacherAdapter);
          return view;
     }
 
@@ -106,6 +114,7 @@ public class AllTeacherProfileFragment extends Fragment implements NewTeacherAda
     @Override
     public void onItemClick(int position) {
 
+        
     }
 
     /**

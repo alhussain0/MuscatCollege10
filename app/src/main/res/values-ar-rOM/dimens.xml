@@ -2,4 +2,6 @@
 <resources>
     <dimen name="text_size">40dp</dimen>
     <dimen name="button_size">12dp</dimen>
+    <dimen name="size25dp">25sp</dimen>
+    <dimen name="size20dp">20dp</dimen>
 </resources>

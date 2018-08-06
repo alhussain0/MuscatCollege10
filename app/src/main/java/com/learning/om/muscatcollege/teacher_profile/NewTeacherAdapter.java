@@ -59,6 +59,9 @@ public class NewTeacherAdapter extends RecyclerView.Adapter<NewTeacherAdapter.Vi
         return 0;
     }
 
+    public void onCardViewClick(AllTeacherProfileFragment allTeacherProfileFragment) {
+    }
+
     public interface OnItemClick {
         public void  onItemClick(int position);
     }
