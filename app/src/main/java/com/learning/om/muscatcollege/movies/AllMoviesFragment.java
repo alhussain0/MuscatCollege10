@@ -23,6 +23,7 @@ import com.learning.om.muscatcollege.R;
 import com.learning.om.muscatcollege.teacher_profile.NewTeacherAdapter;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -51,6 +52,12 @@ public class AllMoviesFragment extends Fragment implements MoviesAdapter.OnItemC
     private JSONObject jsonObject;
     private RequestQueue requestQueue;
     private JsonArrayRequest jsonArrayRequest;
+
+
+
+    private  String title,image;
+    private  int releaseYear;
+    private  double rating;
 
     //you can use json object request if the most outer  in the json file is an object
 //    private JsonObjectRequest jsonObjectRequest;
@@ -101,6 +108,7 @@ public class AllMoviesFragment extends Fragment implements MoviesAdapter.OnItemC
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        moviesArrayList=new ArrayList<>();
 //        myHelperDatabase= new MyHelperDatabase(getContext());
         ((MainHomeNavigation)getActivity()).getSupportActionBar().setTitle("All Teacher Profile");
  //       teacherProfileNews = myHelperDatabase.getAllTheTeacher();
@@ -110,6 +118,27 @@ public class AllMoviesFragment extends Fragment implements MoviesAdapter.OnItemC
             @Override
             public void onResponse(JSONArray response) {
                 Toast.makeText(getActivity(),response.toString(),Toast.LENGTH_LONG).show();
+
+                for (int i =0 ; i< response.length();i++){
+                    try {
+                        movies=new Movies();
+                        jsonObject=response.getJSONObject(i);
+                        title=jsonObject.getString(TITLE_KEY);
+                        movies.setTitle(title);
+                        image=jsonObject.getString(IMAGE_KEY);
+                        movies.setImage(image);
+                        rating=jsonObject.getDouble(RATING_KEY);
+                        movies.setRating(rating);
+                        releaseYear=jsonObject.getInt(RELEASE_YEAR_KEY);
+                        movies.setReleaseYear(releaseYear);
+                        moviesArrayList.add(movies);
+
+                    }catch (JSONException e){
+                        e.printStackTrace();
+                    }
+
+                }
+
             }
         }, new Response.ErrorListener() {
             @Override
